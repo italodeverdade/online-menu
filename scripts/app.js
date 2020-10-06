@@ -18,9 +18,7 @@ const Header = ({ categories }) => {
   };
   return (
     <>
-      <div id="header-container">
-        <img src="/assets/images/cover.jpg" />
-      </div>
+      <div id="header-container" />
       <div id="header">{categories.map(renderItem)}</div>
     </>
   );
