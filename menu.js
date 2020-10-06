@@ -34,16 +34,8 @@ var menu = {
       name: "Salgados Gourmet",
       items: [
         {
-          name: "Bolinho de bacalhau (10 und)",
-          price: 12,
-        },
-        {
           name: "Camarão empanado (10 und)",
           price: 35,
-        },
-        {
-          name: "Camarão empanado com queijo (10 und)",
-          price: 50,
         },
         {
           name: "Canudinho de camarão com azeitona (10 und)",
@@ -58,12 +50,12 @@ var menu = {
           price: 10,
         },
         {
-          name: "Pastel de palmito ",
-          price: 5,
+          name: "Pastel de palmito (05 und) ",
+          price: 10,
         },
         {
-          name: "Pastel de vatapá",
-          price: 6,
+          name: "Pastel de camarão cremoso (05 und) ",
+          price: 12,
         },
         {
           name: "Patinha de caranguejo (10 und)",
@@ -87,7 +79,15 @@ var menu = {
           price: 8,
         },
         {
-          name: "Coxinha de carne de sol com macaxeira)",
+          name: "Coxinha de frango",
+          price: 7,
+        },
+        {
+          name: "Coxinha de frango com catupiry",
+          price: 8,
+        },
+        {
+          name: "Coxinha de carne de sol com macaxeira",
           price: 9,
         },
         {
@@ -172,12 +172,8 @@ var menu = {
       name: "Doces",
       items: [
         {
-          name: "Brigadeiro Tradicional",
+          name: "Docinho",
           price: 3.5,
-        },
-        {
-          name: "Brigadeiros ninho com nutella",
-          price: 4,
         },
         {
           name: "Brownie de brigadeiro",
@@ -224,51 +220,6 @@ var menu = {
         {
           name: "Torta 03 recheios (fatias)",
           price: 14,
-        },
-      ],
-    },
-    {
-      name: "Outras opções",
-      items: [
-        {
-          name: "Caldo de carne com torradas",
-          price: 7,
-        },
-        {
-          name: "Escondidinho de carne de sol",
-          price: 9,
-        },
-        {
-          name: "Lasanha (fatia)",
-          price: 8,
-        },
-        {
-          name: "Casquinhas crocantes (25 unidades)",
-          price: 10,
-        },
-        {
-          name: "Patê de frango com milho/passas (250ml)",
-          price: 15,
-        },
-        {
-          name: "Patê de queijo e presunto (250ml)",
-          price: 15,
-        },
-        {
-          name: "Patê de camarão (250ml)",
-          price: 25,
-        },
-        {
-          name: "Torta salgada do dia (fatia)",
-          price: 7,
-        },
-        {
-          name: "Vatapá (porção)",
-          price: 10,
-        },
-        {
-          name: "Quiche do dia (fatia)",
-          price: 7,
         },
       ],
     },
@@ -328,6 +279,10 @@ var menu = {
           price: 7,
         },
         {
+          name: "Açaí",
+          price: 7,
+        },
+        {
           name: "Suco detox",
           price: 8,
         },
@@ -380,10 +335,14 @@ var menu = {
           name: "Morango",
           price: 8,
         },
+        {
+          name: "Açaí",
+          price: 8,
+        },
       ],
     },
     {
-      name: "Refrigerantes/Água",
+      name: "Refrigerantes e Águas",
       items: [
         {
           name: "Água de coco (jarra)",
@@ -403,14 +362,13 @@ var menu = {
         },
         {
           name: "Refri caçulinha 250ml",
-          description: "(coca, guaraná, pepsi, jesus)",
           price: 3,
         },
         {
-          name: "Refri caçulinha 450ml",
+          name: "Refri lata 450ml",
           description:
             "(coca, guaraná, fanta laranja, fanta uva, jesus, pepsi)",
-          price: 5,
+          price: 6,
         },
         {
           name: "Refri 500/600ml",
@@ -422,12 +380,19 @@ var menu = {
           description: "(coca, jesus, guaraná)",
           price: 7,
         },
+        {
+          name: "Cajuína",
+          price: 7,
+        },
+        {
+          name: "Long Neck",
+          price: 7,
+        },
       ],
     },
     {
       name: "Bebidas quentes",
-      description:
-        "Acompanha 01 copinho de água com gás gelada e 01 biscoitinho amanteigado",
+      description: "Acompanha 01 copinho de água com gás gelada",
       items: [
         {
           name: "Café espresso curto",
@@ -443,22 +408,93 @@ var menu = {
           price: 5,
         },
         {
-          name: "Capuccino grande",
+          name: "Capuccino",
           price: 6,
         },
         {
           name: "Capuccino nutella",
-          description: "(com chantily, borda de nutella, raspas de chocolate)",
-          price: 8,
+          price: 12,
         },
         {
-          name: "Chocolate quente grande",
+          name: "Capuccino com borda e chantilly",
+          price: 15,
+        },
+        {
+          name: "Chocolate quente",
           price: 6,
         },
         {
-          name: "Chocolate Nutella",
-          description: "(com chantilly, borda de Nutella, raspas de chocolate)",
+          name: "Chocolate nutella",
+          price: 12,
+        },
+        {
+          name: "Chocolate com borda e chantilly",
+          price: 15,
+        },
+      ],
+    },
+    {
+      name: "Outras opções",
+      items: [
+        {
+          name: "Caldo de carne",
+          price: 10,
+        },
+        {
+          name: "Escondidinho de carne de sol",
+          price: 9,
+        },
+        {
+          name: "Lasanha (fatia)",
           price: 8,
+        },
+        {
+          name: "Casquinhas crocantes (25 unidades)",
+          price: 10,
+        },
+        {
+          name: "Patê de frango com milho/passas (250ml)",
+          price: 15,
+        },
+        {
+          name: "Patê de queijo e presunto (250ml)",
+          price: 15,
+        },
+        {
+          name: "Patê de camarão (250ml)",
+          price: 25,
+        },
+        {
+          name: "Torta salgada do dia (fatia)",
+          price: 7,
+        },
+        {
+          name: "Vatapá (porção)",
+          price: 10,
+        },
+        {
+          name: "Quiche do dia (fatia)",
+          price: 7,
+        },
+        {
+          name: "Sanduíche natural",
+          price: 7,
+        },
+        {
+          name: "Tapioca simples (opcional manteiga/requeijão)",
+          price: 5,
+        },
+        {
+          name: "Tapioca recheada de frango",
+          price: 10,
+        },
+        {
+          name: "Tapioca recheada de carne de sol",
+          price: 12,
+        },
+        {
+          name: "Misto quente (queijo, presunto)",
+          price: 6,
         },
       ],
     },
