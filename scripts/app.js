@@ -16,7 +16,14 @@ const Header = ({ categories }) => {
       </a>
     );
   };
-  return <div id="header">{categories.map(renderItem)}</div>;
+  return (
+    <>
+      <div id="header-container">
+        <img src="/assets/images/cover.jpg" />
+      </div>
+      <div id="header">{categories.map(renderItem)}</div>
+    </>
+  );
 };
 
 const Category = ({ category, id }) => {
