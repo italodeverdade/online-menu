@@ -1,21 +1,23 @@
-const Header = ({ categories }) => {
-  const [selected, setSelected] = React.useState(0);
-  const renderItem = (item, index) => {
-    let classname = "item";
-    if (index === selected) classname += " selected";
-    return (
-      <a
-        className={classname}
-        href={`#category-${index}`}
-        onClick={() => {
-          setSelected(index);
-        }}
-        key={index}
-      >
-        <span>{item.name}</span>
-      </a>
-    );
-  };
+const Header = ({ categories, selected, setSelected }) => {
+  const renderItem = React.useCallback(
+    (item, index) => {
+      let classname = "item";
+      if (index === selected) classname += " selected";
+      return (
+        <a
+          className={classname}
+          href={`#category-${index}`}
+          onClick={() => {
+            setSelected(index);
+          }}
+          key={index}
+        >
+          <span>{item.name}</span>
+        </a>
+      );
+    },
+    [selected]
+  );
   return (
     <>
       <div id="header-container" />
@@ -30,10 +32,14 @@ const Category = ({ category, id }) => {
   };
   return (
     <div id={`category-${id}`} className="category">
-      <span className="name">{category.name}</span>
-      {category.description && (
-        <span className="description">{category.description}</span>
-      )}
+      <div className="section">
+        <div className="infos">
+          <span className="name">{category.name}</span>
+          {category.description && (
+            <span className="description">{category.description}</span>
+          )}
+        </div>
+      </div>
       <div className="products">{category.items.map(renderItem)}</div>
     </div>
   );
@@ -57,9 +63,45 @@ const Product = ({ product }) => {
 };
 
 const App = () => {
+  const [selectedTab, setSelectedTab] = React.useState(0);
+
+  const onScroll = () => {
+    const scrollPos =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    const screenHeight = window.screen.height;
+
+    const items = document.querySelectorAll("#header > .item");
+    items.forEach((currLink, index) => {
+      const refElement = document.getElementById(
+        currLink.getAttribute("href").replace("#", "")
+      );
+      const box = refElement.getBoundingClientRect();
+
+      const boxPosTop = box.top;
+
+      if (
+        boxPosTop <= scrollPos &&
+        (boxPosTop + refElement.clientHeight) - 60 > scrollPos
+      ) {
+        setSelectedTab(index);
+      }
+    });
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <>
-      <Header categories={menu.data} />
+      <Header
+        selected={selectedTab}
+        setSelected={setSelectedTab}
+        categories={menu.data}
+      />
       {menu.data.map((category, categoryIndex) => {
         return (
           <Category
