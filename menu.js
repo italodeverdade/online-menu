@@ -144,7 +144,7 @@ var menu = {
         },
         {
           name: "Pastel frito de pizza",
-          price: 7,
+          price: 8,
         },
         {
           name: "Pastel frito de queijo",
