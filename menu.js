@@ -392,7 +392,8 @@ var menu = {
     },
     {
       name: "Bebidas quentes",
-      description: "Acompanha 01 copinho de água com gás gelada. Adicionais: Nutella dentro da taça: 2,00; Borda de nutella: 3,00; Chantilly: 3,00",
+      description:
+        "Acompanha 01 copinho de água com gás gelada. Adicionais: Nutella dentro da taça: 2,00; Borda de nutella: 3,00; Chantilly: 3,00",
       items: [
         {
           name: "Café espresso curto",
@@ -417,14 +418,6 @@ var menu = {
         },
         {
           name: "Capuccino/chocolate quente completo",
-          price: 15,
-        },
-        {
-          name: "Chocolate nutella",
-          price: 12,
-        },
-        {
-          name: "Chocolate com borda e chantilly",
           price: 15,
         },
       ],
