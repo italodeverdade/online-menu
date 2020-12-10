@@ -396,7 +396,7 @@ var menu = {
         "Acompanha 01 copinho de água com gás gelada. Adicionais: Nutella dentro da taça: 2,00; Borda de nutella: 3,00; Chantilly: 3,00",
       items: [
         {
-          name: "Café espresso curto",
+          name: "Café expresso curto",
           price: 4,
         },
         {
