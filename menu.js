@@ -72,7 +72,7 @@ var menu = {
         },
         {
           name: "Canudão de carne de sol",
-          price: 9,
+          price: 10,
         },
         {
           name: "Canudão de frango",
@@ -88,11 +88,11 @@ var menu = {
         },
         {
           name: "Coxinha de carne de sol com macaxeira",
-          price: 9,
+          price: 10,
         },
         {
           name: "Coxinha de carne de sol com geleia de pimenta",
-          price: 9,
+          price: 10,
         },
         {
           name: "Coxinha de caranguejo",
@@ -136,7 +136,7 @@ var menu = {
         },
         {
           name: "Pastel frito de carne",
-          price: 7,
+          price: 8,
         },
         {
           name: "Pastel frito de frango",
@@ -148,11 +148,11 @@ var menu = {
         },
         {
           name: "Pastel frito de queijo",
-          price: 7,
+          price: 8,
         },
         {
           name: "Pastel frito de romeu e julieta",
-          price: 7,
+          price: 8,
         },
         {
           name: "Pizza frita de queijo e presunto",
@@ -219,7 +219,7 @@ var menu = {
         },
         {
           name: "Torta 03 recheios (fatias)",
-          price: 14,
+          price: 12,
         },
       ],
     },
@@ -365,10 +365,10 @@ var menu = {
           price: 3,
         },
         {
-          name: "Refri lata 450ml",
+          name: "Refri lata 350ml",
           description:
             "(coca, guaraná, fanta laranja, fanta uva, jesus, pepsi)",
-          price: 6,
+          price: 5,
         },
         {
           name: "Refri 500/600ml",
@@ -382,17 +382,17 @@ var menu = {
         },
         {
           name: "Cajuína",
-          price: 7,
+          price: 9,
         },
         {
           name: "Long Neck",
-          price: 7,
+          price: 8,
         },
       ],
     },
     {
       name: "Bebidas quentes",
-      description: "Acompanha 01 copinho de água com gás gelada",
+      description: "Acompanha 01 copinho de água com gás gelada. Adicionais: Nutella dentro da taça: 2,00; Borda de nutella: 3,00; Chantilly: 3,00",
       items: [
         {
           name: "Café espresso curto",
@@ -408,20 +408,16 @@ var menu = {
           price: 5,
         },
         {
-          name: "Capuccino",
+          name: "Capuccino/chocolate quente 150ml",
           price: 6,
         },
         {
-          name: "Capuccino nutella",
-          price: 12,
+          name: "Capuccino/chocolate quente 300ml",
+          price: 10,
         },
         {
-          name: "Capuccino com borda e chantilly",
+          name: "Capuccino/chocolate quente completo",
           price: 15,
-        },
-        {
-          name: "Chocolate quente",
-          price: 6,
         },
         {
           name: "Chocolate nutella",
@@ -438,7 +434,7 @@ var menu = {
       items: [
         {
           name: "Caldo de carne",
-          price: 10,
+          price: 12,
         },
         {
           name: "Escondidinho de carne de sol",
@@ -474,7 +470,7 @@ var menu = {
         },
         {
           name: "Quiche do dia (fatia)",
-          price: 7,
+          price: 8,
         },
         {
           name: "Sanduíche natural",
